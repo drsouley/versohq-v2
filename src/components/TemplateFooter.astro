@@ -1,0 +1,26 @@
+---
+interface Props {
+  currentLang: 'en' | 'fr' | 'es' | 'nl' | 'ar';
+  footerLinks: Array<{ href: string; label: string }>;
+}
+
+const { currentLang, footerLinks } = Astro.props;
+---
+
+<footer class="footer">
+  <div>
+    <a href="/" class="footer__brand">VERSOHQ <span>(A VERSO Invest service)</span></a>
+    <p class="footer__tag"><span aria-hidden="true">🇪🇺</span> European standards, on your side <span aria-hidden="true">🇦🇪</span></p>
+    <nav class="footer__links" aria-label="Footer">
+      {footerLinks.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </nav>
+  </div>
+  <div class="footer__info">
+    <p>VERSOHQ — IT &amp; AI advisory, Sharjah, United Arab Emirates</p>
+    <p><a href="mailto:hello@versohq.com">hello@versohq.com</a> · <a href="tel:+971565195654">+971 56 519 5654</a></p>
+    <p>Trade licence 4419005.01</p>
+    <p>&copy; 2026 VERSO Invest FZC. All rights reserved.</p>
+  </div>
+</footer>

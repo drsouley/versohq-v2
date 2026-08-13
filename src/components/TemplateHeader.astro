@@ -1,0 +1,77 @@
+---
+interface Props {
+  currentLang: 'en' | 'fr' | 'es' | 'nl' | 'ar';
+  navItems: Array<{ href: string; label: string }>;
+}
+
+const { currentLang, navItems } = Astro.props;
+
+const languages = [
+  { code: 'en', name: 'EN' },
+  { code: 'fr', name: 'FR' },
+  { code: 'es', name: 'ES' },
+  { code: 'nl', name: 'NL' },
+  { code: 'ar', name: 'AR' },
+];
+
+const getLangUrl = (lang: string) => {
+  if (lang === 'en') return '/';
+  return `/${lang}/`;
+};
+---
+
+<header class="header">
+  <a href={getLangUrl(currentLang)} class="logo" aria-label="VERSOHQ home">
+    <img src="/versohq-logo-transparent.svg" alt="VERSOHQ — independent IT and AI advisors, Sharjah UAE" width="270" height="60" class="logo__image" fetchpriority="high" decoding="async">
+  </a>
+  <nav class="nav" id="site-nav" aria-label="Primary">
+    {navItems.map((item) => (
+      <a href={item.href}>{item.label}</a>
+    ))}
+  </nav>
+  <div class="header__actions">
+    <div class="lang-selector">
+      {languages.map((lang) => (
+        <a 
+          href={getLangUrl(lang.code)}
+          class={currentLang === lang.code ? 'active' : ''}
+        >
+          {lang.name}
+        </a>
+      ))}
+    </div>
+    <a href="https://wa.me/971565195654?text=Hi%20VERSOHQ%20%E2%80%94%20I'd%20like%20to%20talk%20about%20my%20business%20tech." class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">Talk to us</a>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </div>
+</header>
+
+<script>
+  (function(){
+    'use strict';
+    var nav=document.getElementById('site-nav'), navToggle=document.getElementById('nav-toggle');
+    var MQ=window.matchMedia('(max-width:1024px)');
+
+    function setNav(o){navToggle.setAttribute('aria-expanded',String(o));if(o)nav.removeAttribute('hidden');else nav.setAttribute('hidden','');}
+    function syncNav(){if(MQ.matches){setNav(navToggle.getAttribute('aria-expanded')==='true');}else{nav.removeAttribute('hidden');navToggle.setAttribute('aria-expanded','false');}}
+
+    function trap(e){
+      if(e.key!=='Tab'||!MQ.matches||navToggle.getAttribute('aria-expanded')!=='true')return;
+      var f=[navToggle].concat(Array.prototype.slice.call(nav.querySelectorAll('a[href]')));
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+    }
+
+    navToggle.addEventListener('click',function(){setNav(navToggle.getAttribute('aria-expanded')!=='true');});
+    nav.addEventListener('click',function(e){if(e.target.tagName==='A'&&MQ.matches)setNav(false);});
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&navToggle.getAttribute('aria-expanded')==='true'){setNav(false);navToggle.focus();}
+      trap(e);
+    });
+    if(MQ.addEventListener)MQ.addEventListener('change',syncNav);else MQ.addListener(syncNav);
+    syncNav();
+  })();
+</script>

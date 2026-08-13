@@ -1,50 +1,240 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import TemplateLayout from '../layouts/TemplateLayout.astro';
+
+const navItems = [
+  { href: '#ai', label: 'AI Tools' },
+  { href: '#equip', label: 'Hardware & SaaS' },
+  { href: '#web', label: 'Digital Presence' },
+  { href: '#how', label: 'How we work' },
+  { href: '#about', label: 'About' },
+];
+
+const footerLinks = [
+  { href: '/privacy/', label: 'Privacy policy' },
+  { href: '/terms/', label: 'Terms of service' },
+  { href: '/legal/', label: 'Legal terms' },
+  { href: 'https://wa.me/971565195654', label: 'WhatsApp' },
+];
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<TemplateLayout
+  title="IT & AI Advisors for Small Business | Dubai & Sharjah | VERSOHQ"
+  description="Independent IT and AI advisors for small businesses in Dubai, Sharjah and across the UAE. The right AI tools, hardware and SaaS — no vendor commissions. First call free."
+  lang="en"
+  navItems={navItems}
+  footerLinks={footerLinks}
+  ogLocale="en_US"
+>
+  <!-- HERO -->
+  <section class="container hero">
+    <div>
+      <span class="eyebrow">European standards. Gulf speed. Serving the UAE.</span>
+      <h1>Independent IT and AI advisors for small businesses in Dubai, Sharjah and the UAE.</h1>
+      <p class="hero__lede">
+        VERSOHQ helps UAE small businesses adopt the right AI tools, choose the best hardware and software for the work they actually do, and run a digital presence that's reliable and professional. Not a Microsoft shop, not a Google shop — we take no vendor commission, so we recommend what fits your business, then set it up for you.
+      </p>
+      <div class="hero__actions">
+        <a href="https://wa.me/971565195654?text=Hi%20VERSOHQ%20%E2%80%94%20I'd%20like%20to%20talk%20about%20my%20business%20tech." class="btn btn--whatsapp" target="_blank" rel="noopener">Start a conversation</a>
+        <a href="#how" class="link-cta">See how we work</a>
+      </div>
+      <p class="hero__note">Built for SOHOs and SMEs across Dubai, Sharjah and Abu Dhabi who'd rather have an advisor than a vendor.</p>
+    </div>
+
+    <div class="pillars-panel">
+      <h2>What we do for UAE small businesses</h2>
+      <div class="pillar-row">
+        <span class="pillar-row__num">01</span>
+        <div><strong>Adopt AI</strong><span>The right AI tools for your team, set up and adopted.</span></div>
+      </div>
+      <div class="pillar-row">
+        <span class="pillar-row__num">02</span>
+        <div><strong>Equip the team</strong><span>The best hardware and SaaS for the daily work.</span></div>
+      </div>
+      <div class="pillar-row">
+        <span class="pillar-row__num">03</span>
+        <div><strong>Digital presence</strong><span>Hosting, email and web that just work.</span></div>
+      </div>
+      <p class="pillars-panel__foot">One principle across all three: no vendor commissions, ever.</p>
+    </div>
+  </section>
+
+  <!-- INDEPENDENCE BAND -->
+  <section class="container section" aria-labelledby="indep-title">
+    <div class="independence">
+      <span class="independence__strap">// Brand-agnostic by design</span>
+      <h2 id="indep-title">A vendor-neutral IT consultant: we don't sell brands, we recommend what works</h2>
+      <p>Google, Microsoft, AWS, or something you've never heard of — we take no commission from any of them. Plenty of IT consultants in the UAE call themselves independent; we put it in writing and show you the comparison behind every recommendation. The only thing steering our advice is what actually helps your business grow.</p>
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="container section" id="pillars" aria-labelledby="pillars-title">
+    <span class="eyebrow">Three ways we help</span>
+    <h2 id="pillars-title">IT and AI advisory services for small businesses — advice you can act on, setup done for you</h2>
+    <p class="section-intro">Bring us one challenge or all three. The same principle sits behind each: the best fit for your team, not the biggest brand.</p>
+
+    <div class="card-grid">
+      <article class="card card--p1" id="ai">
+        <span class="card__num">01 — Adopt AI</span>
+        <h3>AI tools for small business, without the guesswork</h3>
+        <p>We find where AI saves your team real hours, compare the options honestly, recommend what fits, set it up, and train your people. You get outcomes — not another subscription nobody opens.</p>
+        <p class="card__how"><strong>How we work:</strong> we shortlist the field and show our reasoning. You decide with the trade-offs in front of you.</p>
+      </article>
+
+      <article class="card card--p2" id="equip">
+        <span class="card__num">02 — Equip the team</span>
+        <h3>Hardware and SaaS selection for the actual work</h3>
+        <p>We look at how your team really works, then help you choose the devices and software that fit — brand-agnostic, at the best value. Everything configured and ready before it reaches the desk.</p>
+        <p class="card__how"><strong>How we work:</strong> we compare on fit and value, not on who pays us — because nobody does.</p>
+      </article>
+
+      <article class="card card--p3" id="web">
+        <span class="card__num">03 — Digital presence</span>
+        <h3>Business website, hosting and email that just work</h3>
+        <p>Professional hosting, reliable business email, and a web presence that represents you well — set up to stay up, load fast, and keep working without you having to think about it.</p>
+        <p class="card__how"><strong>How we work:</strong> we choose the hosting and email that fit your needs, then keep them running for you.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="container section" id="how" aria-labelledby="how-title">
+    <span class="eyebrow">How we work</span>
+    <h2 id="how-title">How our IT consulting works: a straight path from question to working setup</h2>
+    <p class="section-intro">No packages to pick from. We start with your situation — wherever you are in the UAE — and everything follows from that. The first conversation is free.</p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-step__num">01</div>
+        <h3>Review</h3>
+        <p>We learn how your team works today — the tools, the devices, the friction. No cost, no obligation.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">02</div>
+        <h3>Recommend</h3>
+        <p>You get a clear, brand-agnostic shortlist and our reasoning. You choose with the trade-offs in plain view.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">03</div>
+        <h3>Set up</h3>
+        <p>We handle procurement, configuration and rollout, and train your team so the tools actually get used.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">04</div>
+        <h3>Support</h3>
+        <p>We stay on hand as things change — new hires, new needs, new tools worth switching to.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISES -->
+  <section class="container section" aria-labelledby="promise-title">
+    <span class="eyebrow">What you can count on</span>
+    <h2 id="promise-title">The commitments behind every technology recommendation</h2>
+    <div class="promises">
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>No vendor commissions</h3>
+        <p>We're paid by you, never by a vendor. Our advice has no hidden agenda.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>You own everything</h3>
+        <p>Accounts, domains and licences are in your name. You're never locked in to us.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Transparent costs</h3>
+        <p>Hardware and software pass through at cost. Our fee is always a separate, visible line.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Best fit, not biggest brand</h3>
+        <p>We recommend the tool that suits your team — even when it's the cheaper or smaller option.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / FOUNDERS -->
+  <section class="container section" id="about" aria-labelledby="about-title">
+    <span class="eyebrow u-center">The people behind VERSOHQ</span>
+    <div class="story">
+      <h2 id="about-title" class="u-mb-20">Started by two people tired of watching UAE small businesses overpay for the wrong tech</h2>
+      <p>After years watching small businesses hand over money for software they never fully used and hardware that didn't fit the job, Suleiman and Vera started VERSOHQ on a simple idea: bring the rigour and transparency of European technology practice to the pace of the Gulf. No vendor commissions, no brand loyalty — just honest advice and the setup done properly, so a five-person team can make the same quality of technology decisions as a company ten times its size.</p>
+    </div>
+
+    <div class="founders">
+      <article class="founder">
+        <div class="founder__photo"><img src="/suleiman.jpg" alt="Suleiman, co-founder of VERSOHQ, technology and advisory lead" width="88" height="88" loading="lazy" decoding="async"></div>
+        <h3>Suleiman</h3>
+        <p class="founder__role">Co-founder — Technology & Advisory</p>
+        <p>Twenty five years in enterprise IT across Europe and the MENA, from infrastructure to SaaS rollouts for growing companies. Suleiman leads how VERSOHQ assesses tools and builds each client's stack — always brand-agnostic, always in the client's name.</p>
+      </article>
+
+      <article class="founder">
+        <div class="founder__photo"><img src="/vera.jpg" alt="Vera, co-founder of VERSOHQ, operations and client success lead" width="88" height="88" loading="lazy" decoding="async"></div>
+        <h3>Vera</h3>
+        <p class="founder__role">Co-founder — Operations & Client Success</p>
+        <p>A background in investment and operations for European SMEs, with a focus on getting teams to actually adopt the tools they invest in. Vera runs client relationships and delivery at VERSOHQ, making sure every recommendation ends in something that works day to day.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container section" id="faq" aria-labelledby="faq-title">
+    <span class="eyebrow">Good to know</span>
+    <h2 id="faq-title">Questions UAE businesses ask before getting in touch</h2>
+
+    <div class="faq">
+      <details>
+        <summary>Do you take commissions from Microsoft, Google or anyone else?</summary>
+        <p>No. We take no commission or kickback from any vendor. You pay us for the advice and the work; the tools are passed through to you at cost. That's the whole point of being independent — it's the only way our recommendation can be genuinely about you.</p>
+      </details>
+      <details>
+        <summary>Do we own our own accounts and domains?</summary>
+        <p>Yes, always. Every licence, domain and account we set up is registered in your name, under your control. If you ever decide to work with someone else, everything stays with you and we help you hand it over cleanly.</p>
+      </details>
+      <details>
+        <summary>What size of business do you work with?</summary>
+        <p>Small offices and growing SMEs — roughly one to fifty people. We're built for teams that need the judgement of an IT department without the cost of hiring one.</p>
+      </details>
+      <details>
+        <summary>Do we have to take all three areas?</summary>
+        <p>Not at all. Come to us with one challenge — adopting AI, choosing hardware and software, or sorting out your website and email — or with all three. We scope to what you actually need.</p>
+      </details>
+      <details>
+        <summary>Where in the UAE do you work?</summary>
+        <p>We're based in Sharjah and work with businesses across the UAE — Dubai, Sharjah, Ajman and Abu Dhabi. Most of the review and recommendation work happens remotely; setup and rollout can be done on site where it helps.</p>
+      </details>
+      <details>
+        <summary>What does it cost to work with you?</summary>
+        <p>The first conversation is free. After that you pay a visible advisory or project fee, and any hardware and software is passed through to you at cost with the invoice shown. No markup, no commission, no bundled pricing that hides where the money goes.</p>
+      </details>
+      <details>
+        <summary>How are you different from an IT support company?</summary>
+        <p>An IT company usually sells you something — a licence, a device, a managed contract — and earns on what it sells. We earn only on the advice and the work, so we can tell you when the cheaper option is the better one, or when you don't need to buy anything at all.</p>
+      </details>
+      <details>
+        <summary>You're new. Why should we trust you?</summary>
+        <p>Fair question. We'd rather you judge us on how we work than on a logo wall. The first conversation costs nothing, everything we set up is owned by you, and our pricing is transparent by design. If we're not the right fit, we'll tell you.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT / WHATSAPP -->
+  <section class="container section" id="contact" aria-labelledby="contact-title">
+    <div class="whatsapp-cta">
+      <span class="whatsapp-cta__icon" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"></path></svg>
+      </span>
+      <h2 id="contact-title">Chat with us on WhatsApp</h2>
+      <p>No forms, no waiting. Message us directly and tell us what's on your mind — we'll reply personally, usually within a few hours during business days.</p>
+      <a href="https://wa.me/971565195654?text=Hi%20VERSOHQ%20%E2%80%94%20I'd%20like%20to%20talk%20about%20my%20business%20tech." class="btn btn--whatsapp" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="btn__icon"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.52 11.99c-.06-.11-.22-.17-.47-.29-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18z"></path></svg>
+        Open WhatsApp
+      </a>
+      <p class="whatsapp-cta__num">+971 56519 5654</p>
+      <p class="whatsapp-cta__alt">Prefer email? <a href="mailto:hello@versohq.com">hello@versohq.com</a></p>
+    </div>
+  </section>
+</TemplateLayout>

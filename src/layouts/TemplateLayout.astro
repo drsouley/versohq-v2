@@ -1,0 +1,83 @@
+---
+import TemplateHeader from '../components/TemplateHeader.astro';
+import TemplateFooter from '../components/TemplateFooter.astro';
+import '../styles/template.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: 'en' | 'fr' | 'es' | 'nl' | 'ar';
+  navItems: Array<{ href: string; label: string }>;
+  footerLinks: Array<{ href: string; label: string }>;
+  ogLocale: string;
+}
+
+const { title, description, lang, navItems, footerLinks, ogLocale } = Astro.props;
+
+const langMap: Record<string, string> = {
+  en: 'en_US',
+  fr: 'fr_FR',
+  es: 'es_ES',
+  nl: 'nl_NL',
+  ar: 'ar_AE',
+};
+
+const ogLocaleValue = ogLocale || langMap[lang] || 'en_US';
+const canonicalUrl = lang === 'en' ? 'https://versohq.com/' : `https://versohq.com/${lang}/`;
+---
+
+<!doctype html>
+<html {lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"></noscript>
+    <link rel="canonical" href={canonicalUrl}>
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VERSOHQ">
+    <meta property="og:url" content={canonicalUrl}>
+    <meta property="og:locale" content={ogLocaleValue}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="https://versohq.com/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="VERSOHQ — independent technology advisors">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content="https://versohq.com/og-cover.png">
+    <meta name="geo.region" content="AE-SH">
+    <meta name="geo.placename" content="Sharjah">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    
+    <TemplateHeader currentLang={lang} navItems={navItems} />
+    
+    <main id="main">
+      <slot />
+    </main>
+    
+    <TemplateFooter currentLang={lang} footerLinks={footerLinks} />
+  </body>
+</html>
+
+<style is:global>
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700');
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500');
+  }
+</style>

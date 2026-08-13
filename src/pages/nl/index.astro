@@ -1,0 +1,240 @@
+---
+import TemplateLayout from '../../layouts/TemplateLayout.astro';
+
+const navItems = [
+  { href: '#ai', label: 'AI-Tools' },
+  { href: '#equip', label: 'Hardware en SaaS' },
+  { href: '#web', label: 'Digitale Aanwezigheid' },
+  { href: '#how', label: 'Hoe We Werken' },
+  { href: '#about', label: 'Over Ons' },
+];
+
+const footerLinks = [
+  { href: '/nl/privacy/', label: 'Privacybeleid' },
+  { href: '/nl/terms/', label: 'Servicevoorwaarden' },
+  { href: '/nl/legal/', label: 'Juridische bepalingen' },
+  { href: 'https://wa.me/971565195654', label: 'WhatsApp' },
+];
+---
+
+<TemplateLayout
+  title="IT & AI-Adviseurs voor Kleine Bedrijven | Dubai en Sharjah | VERSOHQ"
+  description="Onafhankelijke IT en AI-adviseurs voor kleine bedrijven in Dubai, Sharjah en in de hele VAE. De juiste AI-tools, hardware en SaaS — geen leverancierscommissies. Eerste gesprek gratis."
+  lang="nl"
+  navItems={navItems}
+  footerLinks={footerLinks}
+  ogLocale="nl_NL"
+>
+  <!-- HERO -->
+  <section class="container hero">
+    <div>
+      <span class="eyebrow">Europese standaarden. Snelheid van de Golf. Diensten aan de VAE.</span>
+      <h1>Onafhankelijke IT en AI-adviseurs voor kleine bedrijven in Dubai, Sharjah en de VAE.</h1>
+      <p class="hero__lede">
+        VERSOHQ helpt kleine bedrijven in de VAE de juiste AI-tools in te voeren, de beste hardware en software voor hun werkelijke werk te kiezen, en een betrouwbare en professionele digitale aanwezigheid in stand te houden. Geen Microsoft-winkel, geen Google-winkel — wij ontvangen geen leverancierscommissie, dus we bevelen aan wat bij uw bedrijf past en stellen het vervolgens in voor u.
+      </p>
+      <div class="hero__actions">
+        <a href="https://wa.me/971565195654?text=Hallo%20VERSOHQ%20%E2%80%94%20Ik%20wil%20graag%20over%20de%20technologie%20van%20mijn%20bedrijf%20praten." class="btn btn--whatsapp" target="_blank" rel="noopener">Start een Gesprek</a>
+        <a href="#how" class="link-cta">Zie hoe we werken</a>
+      </div>
+      <p class="hero__note">Ontworpen voor MKB's in Dubai, Sharjah en Abu Dhabi die liever een adviseur hebben dan een leverancier.</p>
+    </div>
+
+    <div class="pillars-panel">
+      <h2>Wat we doen voor kleine bedrijven in de VAE</h2>
+      <div class="pillar-row">
+        <span class="pillar-row__num">01</span>
+        <div><strong>AI Invoeren</strong><span>De juiste AI-tools voor uw team, ingesteld en aangenomen.</span></div>
+      </div>
+      <div class="pillar-row">
+        <span class="pillar-row__num">02</span>
+        <div><strong>Team Uitrusten</strong><span>De beste hardware en SaaS voor dagelijks werk.</span></div>
+      </div>
+      <div class="pillar-row">
+        <span class="pillar-row__num">03</span>
+        <div><strong>Digitale Aanwezigheid</strong><span>Hosting, e-mail en web die gewoon werken.</span></div>
+      </div>
+      <p class="pillars-panel__foot">Één principe in alle drie: geen leverancierscommissies, nooit.</p>
+    </div>
+  </section>
+
+  <!-- INDEPENDENCE BAND -->
+  <section class="container section" aria-labelledby="indep-title">
+    <div class="independence">
+      <span class="independence__strap">// Merkonafhankelijk door design</span>
+      <h2 id="indep-title">Een neutrale IT-consultant: we verkopen geen merken, we bevelen aan wat werkt</h2>
+      <p>Google, Microsoft, AWS, of iets wat u nog nooit heeft gehoord — wij ontvangen geen commissie van geen van hen. Veel IT-consultants in de VAE noemen zichzelf onafhankelijk; wij schrijven het op en laten u de vergelijking achter elke aanbeveling zien. Het enige wat onze adviezen stuurt is wat uw bedrijf werkelijk helpt groeien.</p>
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="container section" id="pillars" aria-labelledby="pillars-title">
+    <span class="eyebrow">Drie manieren om te helpen</span>
+    <h2 id="pillars-title">IT en AI-adviesdiensten voor kleine bedrijven — advies waar u mee kunt werken, ingesteld voor u</h2>
+    <p class="section-intro">Kom met één uitdaging of alle drie. Hetzelfde principe zit achter elk: de beste pasvorm voor uw team, niet het grootste merk.</p>
+
+    <div class="card-grid">
+      <article class="card card--p1" id="ai">
+        <span class="card__num">01 — AI Invoeren</span>
+        <h3>AI-tools voor kleine bedrijven, zonder giswerk</h3>
+        <p>We vinden waar AI uw team echt uren bespaart, vergelijken de opties eerlijk, bevelen aan wat past, stellen in en trainen uw personeel. U krijgt resultaten — niet nog een abonnement dat niemand opent.</p>
+        <p class="card__how"><strong>Hoe we werken:</strong> we selecteren het veld en tonen onze redenering. U beslist met de afwegingen voor u.</p>
+      </article>
+
+      <article class="card card--p2" id="equip">
+        <span class="card__num">02 — Team Uitrusten</span>
+        <h3>Hardware en SaaS-selectie voor het echte werk</h3>
+        <p>We kijken hoe uw team echt werkt, helpen u dan apparaten en software te kiezen die passen — merkonafhankelijk, tegen de beste waarde. Alles ingesteld en klaar voordat het op het bureau aankomt.</p>
+        <p class="card__how"><strong>Hoe we werken:</strong> we vergelijken op pasvorm en waarde, niet op wie ons betaalt — want niemand doet dat.</p>
+      </article>
+
+      <article class="card card--p3" id="web">
+        <span class="card__num">03 — Digitale Aanwezigheid</span>
+        <h3>Bedrijfswebsite, hosting en e-mail die werken</h3>
+        <p>Professionele hosting, betrouwbare zakelijke e-mail en een webpositie die u goed vertegenwoordigt — ingesteld om operationeel te blijven, snel te laden en zonder uw inbreng te blijven werken.</p>
+        <p class="card__how"><strong>Hoe we werken:</strong> we kiezen hosting en e-mail die bij uw behoeften passen, en houden ze dan voor u in werking.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="container section" id="how" aria-labelledby="how-title">
+    <span class="eyebrow">Hoe we werken</span>
+    <h2 id="how-title">Hoe onze IT-adviezen werken: een recht pad van vraag naar werkende instellingen</h2>
+    <p class="section-intro">Geen pakketten om uit te kiezen. We beginnen met uw situatie — waar u ook in de VAE bent — en alles volgt daaruit voort. Het eerste gesprek is gratis.</p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-step__num">01</div>
+        <h3>Beoordeling</h3>
+        <p>We leren hoe uw team vandaag werkt — de tools, de apparaten, de wrijving. Geen kosten, geen verplichting.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">02</div>
+        <h3>Aanbeveling</h3>
+        <p>U krijgt een heldere, merkonafhankelijke shortlist en onze redenering. U kiest met de afwegingen duidelijk zichtbaar.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">03</div>
+        <h3>Instellen</h3>
+        <p>We regelen aankoop, configuratie en invoering, en trainen uw team zodat de tools echt worden gebruikt.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">04</div>
+        <h3>Ondersteuning</h3>
+        <p>We blijven beschikbaar naarmate dingen veranderen — nieuwe aanstellingen, nieuwe behoeften, nieuwe tools om te overwegen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISES -->
+  <section class="container section" aria-labelledby="promise-title">
+    <span class="eyebrow">Wat u kunt verwachten</span>
+    <h2 id="promise-title">De verplichtingen achter elke technologieaanbeveling</h2>
+    <div class="promises">
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Geen leverancierscommissies</h3>
+        <p>We worden betaald door u, nooit door een leverancier. Ons advies heeft geen verborgen agenda.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>U bezit alles</h3>
+        <p>Accounts, domeinen en licenties staan op uw naam. U zit nooit vast aan ons.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Transparante kosten</h3>
+        <p>Hardware en software gaan door tegen kostprijs. Onze vergoeding is altijd een afzonderlijke, zichtbare regel.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Beste pasvorm, niet grootste merk</h3>
+        <p>We bevelen het gereedschap aan dat bij uw team past — zelfs wanneer het de goedkopste of kleinere optie is.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / FOUNDERS -->
+  <section class="container section" id="about" aria-labelledby="about-title">
+    <span class="eyebrow u-center">De mensen achter VERSOHQ</span>
+    <div class="story">
+      <h2 id="about-title" class="u-mb-20">Opgericht door twee mensen die het zat waren kleine bedrijven in de VAE teveel laten betalen voor verkeerde technologie</h2>
+      <p>Na jaren kleine bedrijven geld zien uitgeven aan software die ze nooit volledig gebruikten en hardware die niet bij het werk paste, startten Suleiman en Vera VERSOHQ met een eenvoudig idee: breng de nauwkeurigheid en transparantie van Europese technologiepraktijk naar het tempo van de Golf. Geen leverancierscommissies, geen merkloyaliteit — gewoon eerlijk advies en correct ingesteld, zodat een team van vijf personen dezelfde kwaliteit technologiebeslissingen kan nemen als een bedrijf dat tien keer zo groot is.</p>
+    </div>
+
+    <div class="founders">
+      <article class="founder">
+        <div class="founder__photo"><img src="/suleiman.jpg" alt="Suleiman, medeoprichter van VERSOHQ, technologie- en adviesleid" width="88" height="88" loading="lazy" decoding="async"></div>
+        <h3>Suleiman</h3>
+        <p class="founder__role">Medeoprichter — Technologie en Advies</p>
+        <p>Vijfentwintig jaar bedrijfs-IT in Europa en het MENA, van infrastructuur tot SaaS-implementaties voor groeiende bedrijven. Suleiman leidt hoe VERSOHQ tools beoordeelt en de stapel van elke klant opbouwt — altijd merkonafhankelijk, altijd in naam van de klant.</p>
+      </article>
+
+      <article class="founder">
+        <div class="founder__photo"><img src="/vera.jpg" alt="Vera, medeoprichter van VERSOHQ, operaties en klantsucces leid" width="88" height="88" loading="lazy" decoding="async"></div>
+        <h3>Vera</h3>
+        <p class="founder__role">Medeoprichter — Operaties en Klantsucces</p>
+        <p>Achtergrond in investeringen en activiteiten voor Europese MKB's, met focus op werkelijke adoptie van geïnvesteerde tools door teams. Vera beheert klantrelaties en levering bij VERSOHQ, zorgend dat elke aanbeveling eindigt in iets dat dagelijks werkt.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container section" id="faq" aria-labelledby="faq-title">
+    <span class="eyebrow">Goed om te weten</span>
+    <h2 id="faq-title">Vragen die bedrijven in de VAE stellen voordat ze contact opnemen</h2>
+
+    <div class="faq">
+      <details>
+        <summary>Ontvangt u commissies van Microsoft, Google of anderen?</summary>
+        <p>Nee. We ontvangen geen commissies of terugbetalingen van leveranciers. U betaalt ons voor het advies en het werk; de tools worden tegen kostprijs aan u geleverd. Dat is het hele punt van onafhankelijk zijn — het is de enige manier waarop ons advies echt over u gaat.</p>
+      </details>
+      <details>
+        <summary>Bezitten we onze eigen accounts en domeinen?</summary>
+        <p>Ja, altijd. Elke licentie, elk domein en elke account die we instellen, staat op uw naam, onder uw controle. Als u ooit met iemand anders wilt werken, blijft alles bij u en helpen we u het schoon over te dragen.</p>
+      </details>
+      <details>
+        <summary>Met welke bedrijfsomvang werken jullie?</summary>
+        <p>Kleine kantoren en groeiende MKB's — ongeveer één tot vijftig personen. We zijn ontworpen voor teams die het oordeel van een IT-afdeling nodig hebben zonder de kosten van het inhuren ervan.</p>
+      </details>
+      <details>
+        <summary>Moeten we alle drie gebieden nemen?</summary>
+        <p>Helemaal niet. Kom naar ons met één uitdaging — AI invoeren, hardware en software kiezen, of uw website en e-mail regelen — of met alle drie. We stellen in op wat u werkelijk nodig hebt.</p>
+      </details>
+      <details>
+        <summary>Waar in de VAE werken jullie?</summary>
+        <p>We zijn gebaseerd in Sharjah en werken met bedrijven in de hele VAE — Dubai, Sharjah, Ajman en Abu Dhabi. Het meeste beoordeling- en aanbevelingswerk wordt op afstand gedaan; instellingen en implementatie kunnen ter plaatse gebeuren waar dit helpt.</p>
+      </details>
+      <details>
+        <summary>Hoeveel kost het om met u te werken?</summary>
+        <p>Het eerste gesprek is gratis. Daarna betaalt u een zichtbaar advies- of projecthonoraium, en elke hardware en software wordt tegen kostprijs aan u geleverd met de factuur weergegeven. Geen opslag, geen commissies, geen gebundelde prijzen die verbergen waar het geld naartoe gaat.</p>
+      </details>
+      <details>
+        <summary>Hoe verschilt u van een IT-ondersteuningsbedrijf?</summary>
+        <p>Een IT-bedrijf verkoopt meestal iets — een licentie, een apparaat, een beheerd contract — en verdient wat het verkoopt. We verdienen alleen op het advies en het werk, dus we kunnen u zeggen wanneer de goedkopere optie beter is, of wanneer u helemaal niets hoeft te kopen.</p>
+      </details>
+      <details>
+        <summary>Jullie zijn nieuw. Waarom zouden we je vertrouwen?</summary>
+        <p>Goede vraag. We willen liever dat u ons oordeelt op hoe we werken dan op een muurlogo. Het eerste gesprek kost niets, alles wat we instellen is van u, en onze prijzen zijn transparant ontworpen. Als we niet de juiste keuze zijn, zullen we het u vertellen.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT / WHATSAPP -->
+  <section class="container section" id="contact" aria-labelledby="contact-title">
+    <div class="whatsapp-cta">
+      <span class="whatsapp-cta__icon" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"></path></svg>
+      </span>
+      <h2 id="contact-title">Chat met ons op WhatsApp</h2>
+      <p>Geen formulieren, geen wachten. Stuur ons direct een bericht en vertel ons wat u bezighoudt — we antwoorden persoonlijk, meestal binnen enkele uren op werkdagen.</p>
+      <a href="https://wa.me/971565195654?text=Hallo%20VERSOHQ%20%E2%80%94%20Ik%20wil%20graag%20over%20de%20technologie%20van%20mijn%20bedrijf%20praten." class="btn btn--whatsapp" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="btn__icon"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.52 11.99c-.06-.11-.22-.17-.47-.29-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18z"></path></svg>
+        WhatsApp Openen
+      </a>
+      <p class="whatsapp-cta__num">+971 56519 5654</p>
+      <p class="whatsapp-cta__alt">Voorkeur voor e-mail? <a href="mailto:hello@versohq.com">hello@versohq.com</a></p>
+    </div>
+  </section>
+</TemplateLayout>

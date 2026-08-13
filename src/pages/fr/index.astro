@@ -1,0 +1,240 @@
+---
+import TemplateLayout from '../../layouts/TemplateLayout.astro';
+
+const navItems = [
+  { href: '#ai', label: 'Outils IA' },
+  { href: '#equip', label: 'Matériel et SaaS' },
+  { href: '#web', label: 'Présence numérique' },
+  { href: '#how', label: 'Comment nous travaillons' },
+  { href: '#about', label: 'À propos' },
+];
+
+const footerLinks = [
+  { href: '/fr/privacy/', label: 'Politique de confidentialité' },
+  { href: '/fr/terms/', label: 'Conditions d\'utilisation' },
+  { href: '/fr/legal/', label: 'Mentions légales' },
+  { href: 'https://wa.me/971565195654', label: 'WhatsApp' },
+];
+---
+
+<TemplateLayout
+  title="Conseillers IT et IA pour Petites Entreprises | Dubaï et Charjah | VERSOHQ"
+  description="Conseillers IT et IA indépendants pour petites entreprises à Dubaï, Charjah et aux Émirats Arabes Unis. Les bons outils IA, matériel et SaaS — sans commissions de fournisseur. Premier appel gratuit."
+  lang="fr"
+  navItems={navItems}
+  footerLinks={footerLinks}
+  ogLocale="fr_FR"
+>
+  <!-- HERO -->
+  <section class="container hero">
+    <div>
+      <span class="eyebrow">Normes européennes. Rapidité du Golfe. Au service des Émirats.</span>
+      <h1>Conseillers IT et IA indépendants pour petites entreprises à Dubaï, Charjah et aux Émirats Arabes Unis.</h1>
+      <p class="hero__lede">
+        VERSOHQ aide les petites entreprises des Émirats à adopter les bons outils d'IA, à choisir le meilleur matériel et logiciel pour leur travail réel, et à gérer une présence numérique fiable et professionnelle. Pas d'exclusivité Microsoft, pas d'exclusivité Google — nous ne percevons aucune commission de fournisseur, nous recommandons ce qui convient à votre entreprise, puis nous le configurons pour vous.
+      </p>
+      <div class="hero__actions">
+        <a href="https://wa.me/971565195654?text=Bonjour%20VERSOHQ%20%E2%80%94%20J'aimerais%20parler%20de%20la%20technologie%20de%20mon%20entreprise." class="btn btn--whatsapp" target="_blank" rel="noopener">Commencer une conversation</a>
+        <a href="#how" class="link-cta">Voir comment nous travaillons</a>
+      </div>
+      <p class="hero__note">Conçu pour les PME à travers Dubaï, Charjah et Abu Dhabi qui préfèrent avoir un conseiller plutôt qu'un fournisseur.</p>
+    </div>
+
+    <div class="pillars-panel">
+      <h2>Ce que nous faisons pour les petites entreprises des Émirats</h2>
+      <div class="pillar-row">
+        <span class="pillar-row__num">01</span>
+        <div><strong>Adopter l'IA</strong><span>Les bons outils d'IA pour votre équipe, configurés et adoptés.</span></div>
+      </div>
+      <div class="pillar-row">
+        <span class="pillar-row__num">02</span>
+        <div><strong>Équiper l'équipe</strong><span>Le meilleur matériel et SaaS pour le travail quotidien.</span></div>
+      </div>
+      <div class="pillar-row">
+        <span class="pillar-row__num">03</span>
+        <div><strong>Présence numérique</strong><span>Hébergement, e-mail et web qui fonctionnent simplement.</span></div>
+      </div>
+      <p class="pillars-panel__foot">Un principe dans les trois domaines : aucune commission de fournisseur, jamais.</p>
+    </div>
+  </section>
+
+  <!-- INDEPENDENCE BAND -->
+  <section class="container section" aria-labelledby="indep-title">
+    <div class="independence">
+      <span class="independence__strap">// Indépendance de marque par conception</span>
+      <h2 id="indep-title">Un consultant IT neutre : nous ne vendons pas des marques, nous recommandons ce qui fonctionne</h2>
+      <p>Google, Microsoft, AWS, ou quelque chose que vous n'avez jamais entendu parler — nous ne recevons aucune commission d'aucun d'eux. De nombreux consultants IT aux Émirats se disent indépendants ; nous l'écrivons et vous montrons la comparaison derrière chaque recommandation. La seule chose qui guide nos conseils est ce qui aide vraiment votre entreprise à croître.</p>
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="container section" id="pillars" aria-labelledby="pillars-title">
+    <span class="eyebrow">Trois façons de vous aider</span>
+    <h2 id="pillars-title">Services de conseil IT et IA pour petites entreprises — des conseils que vous pouvez mettre en pratique, la configuration faite pour vous</h2>
+    <p class="section-intro">Venez avec un défi ou trois. Le même principe est derrière chacun : le meilleur choix pour votre équipe, pas la plus grande marque.</p>
+
+    <div class="card-grid">
+      <article class="card card--p1" id="ai">
+        <span class="card__num">01 — Adopter l'IA</span>
+        <h3>Outils d'IA pour les petites entreprises, sans deviner</h3>
+        <p>Nous trouvons où l'IA économise réellement des heures à votre équipe, comparons les options honnêtement, recommandons ce qui convient, configurons et formons votre personnel. Vous obtenez des résultats — pas un autre abonnement que personne n'ouvre.</p>
+        <p class="card__how"><strong>Comment nous travaillons :</strong> nous sélectionnons le domaine et montrons notre raisonnement. Vous décidez avec les compromis devant vous.</p>
+      </article>
+
+      <article class="card card--p2" id="equip">
+        <span class="card__num">02 — Équiper l'équipe</span>
+        <h3>Sélection de matériel et SaaS pour le vrai travail</h3>
+        <p>Nous regardons comment votre équipe travaille réellement, puis vous aidons à choisir les appareils et les logiciels qui conviennent — indépendant de la marque, au meilleur prix. Tout est configuré et prêt avant d'arriver au bureau.</p>
+        <p class="card__how"><strong>Comment nous travaillons :</strong> nous comparons sur l'ajustement et la valeur, pas sur qui nous paie — parce que personne ne le fait.</p>
+      </article>
+
+      <article class="card card--p3" id="web">
+        <span class="card__num">03 — Présence numérique</span>
+        <h3>Site web commercial, hébergement et e-mail qui fonctionnent</h3>
+        <p>Hébergement professionnel, e-mail commercial fiable et une présence web qui vous représente bien — configurée pour rester opérationnelle, charger rapidement et continuer à fonctionner sans que vous ayez à y penser.</p>
+        <p class="card__how"><strong>Comment nous travaillons :</strong> nous choisissons l'hébergement et l'e-mail qui conviennent à vos besoins, puis nous les maintenons en marche pour vous.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="container section" id="how" aria-labelledby="how-title">
+    <span class="eyebrow">Comment nous travaillons</span>
+    <h2 id="how-title">Comment fonctionne notre conseil IT : un chemin direct de la question à la configuration fonctionnelle</h2>
+    <p class="section-intro">Pas de forfaits à choisir. Nous commençons par votre situation — où que vous soyez aux Émirats — et tout découle de là. La première conversation est gratuite.</p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-step__num">01</div>
+        <h3>Examen</h3>
+        <p>Nous apprenons comment votre équipe fonctionne aujourd'hui — les outils, les appareils, les friction. Pas de coût, pas d'obligation.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">02</div>
+        <h3>Recommandation</h3>
+        <p>Vous obtenez une liste courte claire et indépendante de la marque et notre raisonnement. Vous choisissez avec les compromis en clair.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">03</div>
+        <h3>Configuration</h3>
+        <p>Nous gérons l'approvisionnement, la configuration et le déploiement, et formons votre équipe afin que les outils soient réellement utilisés.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">04</div>
+        <h3>Soutien</h3>
+        <p>Nous restons disponibles à mesure que les choses changent — nouvelles recrues, nouveaux besoins, nouveaux outils à considérer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISES -->
+  <section class="container section" aria-labelledby="promise-title">
+    <span class="eyebrow">Sur quoi vous pouvez compter</span>
+    <h2 id="promise-title">Les engagements derrière chaque recommandation technologique</h2>
+    <div class="promises">
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Aucune commission de fournisseur</h3>
+        <p>Nous sommes payés par vous, jamais par un fournisseur. Nos conseils n'ont pas d'agenda caché.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Vous possédez tout</h3>
+        <p>Les comptes, les domaines et les licences sont à votre nom. Vous n'êtes jamais enfermé avec nous.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Coûts transparents</h3>
+        <p>Le matériel et les logiciels sont facturés au prix coûtant. Notre honoraire est toujours une ligne distincte et visible.</p>
+      </div>
+      <div class="promise">
+        <div class="promise__mark" aria-hidden="true">✓</div>
+        <h3>Meilleur ajustement, pas la plus grande marque</h3>
+        <p>Nous recommandons l'outil qui convient à votre équipe — même lorsque c'est l'option la moins chère ou plus petite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / FOUNDERS -->
+  <section class="container section" id="about" aria-labelledby="about-title">
+    <span class="eyebrow u-center">Les personnes derrière VERSOHQ</span>
+    <div class="story">
+      <h2 id="about-title" class="u-mb-20">Fondée par deux personnes fatiguées de voir les petites entreprises des Émirats surpayer pour la mauvaise technologie</h2>
+      <p>Après des années à voir les petites entreprises dépenser de l'argent pour les logiciels qu'elles n'utilisaient jamais pleinement et le matériel qui ne convenait pas au travail, Suleiman et Vera ont fondé VERSOHQ sur une idée simple : apporter la rigueur et la transparence de la pratique technologique européenne au rythme du Golfe. Aucune commission de fournisseur, aucune loyauté de marque — juste des conseils honnêtes et une configuration bien faite, pour qu'une équipe de cinq personnes puisse prendre les mêmes décisions technologiques de qualité qu'une entreprise dix fois plus grande.</p>
+    </div>
+
+    <div class="founders">
+      <article class="founder">
+        <div class="founder__photo"><img src="/suleiman.jpg" alt="Suleiman, co-fondateur de VERSOHQ, chef technologie et conseil" width="88" height="88" loading="lazy" decoding="async"></div>
+        <h3>Suleiman</h3>
+        <p class="founder__role">Co-fondateur — Technologie et Conseil</p>
+        <p>Vingt-cinq ans en informatique d'entreprise à travers l'Europe et le MENA, de l'infrastructure aux déploiements SaaS pour les entreprises en croissance. Suleiman dirige comment VERSOHQ évalue les outils et construit la pile de chaque client — toujours indépendant de la marque, toujours au nom du client.</p>
+      </article>
+
+      <article class="founder">
+        <div class="founder__photo"><img src="/vera.jpg" alt="Vera, co-fondatrice de VERSOHQ, chef opérations et succès client" width="88" height="88" loading="lazy" decoding="async"></div>
+        <h3>Vera</h3>
+        <p class="founder__role">Co-fondatrice — Opérations et Succès Client</p>
+        <p>Formation en investissement et opérations pour les PME européennes, avec un accent sur l'adoption réelle des outils par les équipes. Vera gère les relations avec les clients et la livraison chez VERSOHQ, s'assurant que chaque recommandation se termine par quelque chose qui fonctionne au quotidien.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container section" id="faq" aria-labelledby="faq-title">
+    <span class="eyebrow">À savoir</span>
+    <h2 id="faq-title">Questions que les entreprises des Émirats posent avant de prendre contact</h2>
+
+    <div class="faq">
+      <details>
+        <summary>Recevez-vous des commissions de Microsoft, Google ou d'autres ?</summary>
+        <p>Non. Nous ne recevons aucune commission ou rétrocommission d'aucun fournisseur. Vous nous payez pour les conseils et le travail ; les outils vous sont facturés au prix coûtant. C'est tout l'intérêt d'être indépendant — c'est le seul moyen que notre recommandation soit réellement à votre avantage.</p>
+      </details>
+      <details>
+        <summary>Possédons-nous nos propres comptes et domaines ?</summary>
+        <p>Oui, toujours. Chaque licence, domaine et compte que nous configurons est enregistré à votre nom, sous votre contrôle. Si vous décidez un jour de travailler avec quelqu'un d'autre, tout reste avec vous et nous vous aidons à le transférer proprement.</p>
+      </details>
+      <details>
+        <summary>Quelle taille d'entreprise servez-vous ?</summary>
+        <p>Petits bureaux et PME en croissance — environ une à cinquante personnes. Nous sommes conçus pour les équipes qui ont besoin du jugement d'un département IT sans le coût d'en embaucher un.</p>
+      </details>
+      <details>
+        <summary>Devons-nous prendre les trois domaines ?</summary>
+        <p>Pas du tout. Venez nous voir avec un défi — adopter l'IA, choisir le matériel et les logiciels, ou configurer votre site web et e-mail — ou avec les trois. Nous adaptons à ce dont vous avez réellement besoin.</p>
+      </details>
+      <details>
+        <summary>Où travaillez-vous dans les Émirats ?</summary>
+        <p>Nous sommes basés à Charjah et travaillons avec des entreprises à travers les Émirats — Dubaï, Charjah, Ajman et Abu Dhabi. La plupart du travail d'examen et de recommandation se fait à distance ; la configuration et le déploiement peuvent se faire sur site si nécessaire.</p>
+      </details>
+      <details>
+        <summary>Combien cela coûte-t-il de travailler avec vous ?</summary>
+        <p>La première conversation est gratuite. Après cela, vous payez un honoraire de conseil ou de projet visible, et tout matériel et logiciel vous est facturé au prix coûtant avec la facture affichée. Pas de majoration, aucune commission, pas de tarification groupée qui cache où va l'argent.</p>
+      </details>
+      <details>
+        <summary>Comment êtes-vous différents d'une entreprise de support IT ?</summary>
+        <p>Une entreprise IT vend généralement quelque chose — une licence, un appareil, un contrat géré — et gagne sur ce qu'elle vend. Nous gagnons uniquement sur les conseils et le travail, donc nous pouvons vous dire quand l'option moins chère est la meilleure, ou quand vous n'avez besoin d'acheter rien du tout.</p>
+      </details>
+      <details>
+        <summary>Vous êtes nouveaux. Pourquoi devrions-nous vous faire confiance ?</summary>
+        <p>Bonne question. Nous préférons que vous nous jugiez sur comment nous travaillons plutôt que sur un mur de logos. La première conversation ne coûte rien, tout ce que nous configurons vous appartient, et notre tarification est transparente par conception. Si nous ne sommes pas la bonne option, nous vous le dirons.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT / WHATSAPP -->
+  <section class="container section" id="contact" aria-labelledby="contact-title">
+    <div class="whatsapp-cta">
+      <span class="whatsapp-cta__icon" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"></path></svg>
+      </span>
+      <h2 id="contact-title">Discutez avec nous sur WhatsApp</h2>
+      <p>Pas de formulaires, pas d'attente. Envoyez-nous un message directement et dites-nous ce qui vous préoccupe — nous répondrons personnellement, généralement dans quelques heures les jours ouvrables.</p>
+      <a href="https://wa.me/971565195654?text=Bonjour%20VERSOHQ%20%E2%80%94%20J'aimerais%20parler%20de%20la%20technologie%20de%20mon%20entreprise." class="btn btn--whatsapp" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="btn__icon"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.52 11.99c-.06-.11-.22-.17-.47-.29-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18z"></path></svg>
+        Ouvrir WhatsApp
+      </a>
+      <p class="whatsapp-cta__num">+971 56519 5654</p>
+      <p class="whatsapp-cta__alt">Préférez l'e-mail ? <a href="mailto:hello@versohq.com">hello@versohq.com</a></p>
+    </div>
+  </section>
+</TemplateLayout>
