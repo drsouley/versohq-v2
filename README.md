@@ -1,34 +1,56 @@
-# Astro Starter Kit: Blog
+# VERSOHQ V2 — Multilingual Technology Advisory Website
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/astro-blog-starter-template)
+Multilingual Astro website for VERSOHQ, independent IT and AI consultants serving small businesses across the UAE. Built with 5 language versions (English, French, Spanish, Dutch, Arabic) and optimized for Cloudflare Workers deployment.
 
-![Astro Template Preview](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+**Live Site:** [versohq.com](https://versohq.com)
 
-<!-- dash-content-start -->
+## Features
 
-Create a blog with Astro and deploy it on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-- ✅ Built-in Observability logging
-
-<!-- dash-content-end -->
+- ✅ **5 Language Versions** — English, French, Spanish, Dutch, and Arabic with RTL support
+- ✅ **Dark Theme Design** — Modern, professional UI with brand colors and responsive layout
+- ✅ **Component Architecture** — Reusable Astro components (Header, Footer, Layout) for maintainability
+- ✅ **SEO Optimized** — Language-specific meta tags, canonical URLs, OpenGraph data, structured schema
+- ✅ **Mobile-First Responsive** — Mobile nav toggle, adaptive layouts for all screen sizes
+- ✅ **Brand Assets** — Logo, founder photos, consistent styling across all languages
+- ✅ **Language Routing** — Clean URL structure: `/` (EN), `/fr/`, `/es/`, `/nl/`, `/ar/`
+- ✅ **WhatsApp Integration** — Direct CTA buttons with language-specific links
+- ✅ **100/100 Lighthouse Performance** — Static site generation via Astro
+- ✅ **Cloudflare Workers Ready** — Deploy as static site to Cloudflare Workers
 
 ## Getting Started
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+### Prerequisites
+
+- Node.js 16.x or higher
+- npm or pnpm
+
+### Installation
 
 ```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/astro-blog-starter-template
+# Clone the repository
+git clone https://github.com/drsouley/versohq-v2.git
+cd versohq-v2
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-A live public deployment of this template is available at [https://astro-blog-starter-template.templates.workers.dev](https://astro-blog-starter-template.templates.workers.dev)
+The site will be available at `http://localhost:4321` with hot reload enabled.
+
+### Language Versions
+
+Access each language version directly:
+
+- **English** — http://localhost:4321/
+- **French** — http://localhost:4321/fr/
+- **Spanish** — http://localhost:4321/es/
+- **Dutch** — http://localhost:4321/nl/
+- **Arabic** — http://localhost:4321/ar/
+
+Language switcher in the header navigation allows quick switching between all 5 versions.
 
 ## 🚀 Project Structure
 
